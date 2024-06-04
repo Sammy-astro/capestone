@@ -29,7 +29,7 @@ This is the Capstone project for [Your Course/Program]. It is a Django applicati
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/capstone.git
+   git clone https://github.com/Sammy-astro/capestone
    cd capstone
 Create a virtual environment:
 
@@ -61,7 +61,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/capstone.git
+git clone https://github.com/Sammy-astro/capestone
 cd capstone
 Build the Docker image:
 
@@ -70,11 +70,7 @@ Copy code
 docker build -t capstone .
 Run the Docker container:
 
-bash
-Copy code
-docker run -d -p 8000:8000 capstone
-Access the application:
-Open your web browser and go to http://localhost:8000.
+
 
 Usage
 To use the Capstone application, follow these steps:
@@ -126,7 +122,7 @@ import os
 import sys
 import django
 sys.path.insert(0, os.path.abspath('..'))
-os.environ['DJANGO_SETTINGS_MODULE'] = 'your_project_name.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'bandsite.settings'
 django.setup()
 Generate HTML documentation:
 
@@ -171,62 +167,61 @@ __pycache__/
 .idea/
 Initialize Git and Commit:
 
-bash
+
 Copy code
 git init
 git add .
 git commit -m "Initial commit"
 Create and Switch to the Docs Branch:
 
-bash
+
 Copy code
 git checkout -b docs
 Document Code:
 Add docstrings to your functions, classes, and modules. Commit after documenting each script:
 
-bash
+
 Copy code
 git add .
 git commit -m "Add documentation for [script/module name]"
 Generate Sphinx Documentation:
 
-bash
+
 Copy code
 sphinx-quickstart
 # Follow the prompts to configure Sphinx
 Commit Sphinx Documentation:
 
-bash
+
 Copy code
 git add .
 git commit -m "Add Sphinx documentation"
 Switch Back to Master and Merge:
 
-bash
+
 Copy code
 git checkout master
 git merge docs
 Create and Switch to the Container Branch:
 
-bash
+
 Copy code
 git checkout -b container
 Add Dockerfile:
 Create a Dockerfile in your project root and commit it:
 
-bash
 Copy code
 git add Dockerfile
 git commit -m "Add Dockerfile"
 Switch Back to Master and Merge:
 
-bash
+
 Copy code
 git checkout master
 git merge container
 Push to Remote Repository:
 
-bash
+
 Copy code
 git remote add origin <your-remote-repo-url>
 git push -u origin master
