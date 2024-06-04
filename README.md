@@ -70,23 +70,6 @@ Copy code
 docker build -t capstone .
 Run the Docker container:
 
-
-
-Usage
-To use the Capstone application, follow these steps:
-
-Step 1: [Describe the first step of using your application].
-Step 2: [Describe the second step of using your application].
-Step 3: [Describe the third step of using your application].
-Example usage:
-
-bash
-Copy code
-python manage.py your_custom_command
-Documentation
-Adding Docstrings
-To add docstrings to your functions, classes, and modules, follow this format:
-
 python
 Copy code
 def example_function(param1, param2):
